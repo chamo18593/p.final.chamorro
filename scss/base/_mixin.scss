@@ -1,0 +1,37 @@
+@mixin fontStyle { 
+    background-color: $bg-darkblue;
+    font-size: 18px;  
+    color: white;
+    font-family: 'rubik';
+}
+
+@mixin alineacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textoCompleto{
+    background-color: $color-uno;
+    color: $color-seis;
+    border-radius: 10px;
+    font-family: 'roboto';
+    padding: 10px;
+    text-align: center;
+    margin: 50px 20px;    
+    font-size: 25px;
+}
+
+@mixin textoTitulo{
+    color: $color-cinco;
+    font-size: 120px;
+    font-family: 'rubik';
+    text-align: center;
+}
+
+@mixin textoTituloChico{
+    color: $color-cinco;
+    font-size: 70px;
+    font-family: 'rubik';
+    text-align: center;
+}

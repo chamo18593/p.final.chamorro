@@ -1,0 +1,208 @@
+.navBarMod{
+    @include fontStyle
+}
+
+.colorNav{
+    color: #84aace;
+}
+
+body{
+    background-image: url(../imagenes/fabrica-fondo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+div {
+    @include alineacion;
+    img { 
+        height: 330px;
+        width: 350px;
+        margin-top: 50px;
+
+    }
+}
+
+.hache4{
+    @include textoCompleto
+}
+
+.parrafo1{
+    @include textoCompleto; 
+    font-size: 17px;
+}
+
+.infoMod{
+    background-color: $color-dos;
+    color: $color-seis;
+    font-family: 'roboto';
+    position: absolute;
+    bottom: 10px;
+    height: 35px;
+}
+
+.parIndex1{
+    padding: 5px;
+}
+
+.sizeMod{
+    width: 300px;
+    text-align: center;
+}
+.sizeMod1{
+    font-size: 15px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    color: white;
+}
+
+.animacionIndex {
+    animation-duration: 3s;
+    animation-name: mover;
+  }
+  
+  @keyframes mover {
+    0%{
+        transform: translateY(300%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  /*servicio*/
+  
+  .h1Servicio{
+    @include textoTitulo
+  }
+
+  .img-fluid{
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .imagen1{
+    width: 500px;
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+
+  .imagen1:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.cardMod{
+    width: 200px;
+    height: 150px;
+}
+
+.estiloCarta{
+    margin: 10px 20px;
+    font-family: 'roboto';
+    color: $color-uno;
+}
+
+/*clientes*/
+
+
+.h1Clientes{
+    height: 100px;
+    margin-left: 20px ; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 100px;
+    margin-top: 80px;
+}
+
+.estiloTabla{
+    background-color: $bg-darkblue;
+    color: white;     
+    text-align: center; 
+    margin-top: 10px;
+  }
+
+   th{
+    border: 1px solid white;
+   }
+   td{
+    border: 1px solid white;
+   }
+
+   .hache4{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+   }
+
+   .imgClintes{
+    width: 300px;
+    height: 350px;
+
+   }
+
+   .divDosT{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+   }
+
+   .colorForm{
+    color: white;
+    font-size: 20px;
+   }
+
+   .colorBoton{
+    color: white;
+    background-color: $color-cuatro;
+    border: solid 1px $color-uno;
+    padding: 3px;
+    margin: 20px;
+   }
+
+   /*media querys*/
+
+   @media (max-width: 576px){
+
+    .infoMod{
+        display: none;
+    }
+
+    .h1Servicio{
+        display: none;
+    }
+   }
+
+   @media (max-width: 1510px){
+    .img2{
+        display: none;
+    }
+   }
+
+    @media (max-width: 595px){
+        .h1Servicio{
+            @include textoTituloChico;
+        }
+    }
+
+   @media (max-width: 768px){
+    .h1Servicio{
+        @include textoTituloChico;
+    }
+   }
+
+   @media (max-width: 992px){
+    .gift1{
+        display: none;
+    }
+   }
+   
