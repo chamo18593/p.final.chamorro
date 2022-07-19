@@ -168,6 +168,42 @@ div {
     padding: 3px;
     margin: 20px;
    }
+    
+   /*nosotros*/
+
+   .h1Nosotros{
+        color: white;
+        font-family: 'roboto';
+        @include alineacion;
+        margin: 20px;
+        background-color: rgb(25, 45, 88);
+        border-radius: 50px;
+    }
+    .h1Nosotros1{
+        color: white;
+        font-family: 'roboto';
+        @include alineacion;
+        margin: 20px;
+        background-color: rgb(44, 69, 121);
+        border-radius: 50px;
+    }
+    .h1Nosotros2{
+        color: white;
+        font-family: 'roboto';
+        @include alineacion;
+        margin: 20px;
+        background-color: rgb(78, 106, 165);
+        border-radius: 50px;
+    }
+    .h1Nosotros3{
+        color: white;
+        font-family: 'roboto';
+        @include alineacion;
+        margin: 20px;
+        background-color: rgb(116, 141, 197);
+        border-radius: 50px;
+    }
+    
 
    /*media querys*/
 
